@@ -18,7 +18,6 @@ The **wp-members-to-pmpro-migration-plugin** simplifies the migration process fr
 3. Find the newly added submenu "WP-members to PMPro" and access the plugin settings.
 4. Initiate the migration process to generate the CSV file and export restricted content.
 
-
 ## Usage
 
 1. **CSV Generation:**
@@ -41,6 +40,6 @@ The plugin settings can be accessed under the "Tools" menu in the WordPress admi
 
 ## License
 
-This project is licensed under the GPLv2
+This project is licensed under the GPLv2+
 
 Happy Migrating!
