@@ -2,9 +2,8 @@
 (function ($) {
 	'use strict';
 
-    console.log('ok');
 
-    console.log(ets_wpmembers_to_pmpro_js_params);
+    // console.log(ets_wpmembers_to_pmpro_js_params);
 
     if ( ets_wpmembers_to_pmpro_js_params.is_admin ) {
 
