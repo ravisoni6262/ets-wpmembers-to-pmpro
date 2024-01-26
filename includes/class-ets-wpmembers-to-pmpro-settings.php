@@ -70,20 +70,6 @@ class Ets_Wpmembers_To_Pmpro_Settings {
 
 
 	/**
-	 *
-	 */
-	public function enqueue_scripts() {
-
-		wp_register_script( ETS_WPMEBERS_TO_PMPRO_SLUG, ETS_WPMEBERS_TO_PMPRO_PLUGIN_DIR_URL . 'js/ets-wpmembers-to-pmpro.js', array( 'jquery' ), ETS_WPMEBERS_TO_PMPRO_VERSION, false );
-		$script_params = array(
-			'admin_ajax'                   => admin_url( 'admin-ajax.php' ),
-			'is_admin'                     => is_admin(),
-			'ets_wpmembers_to_pmpro_nonce' => wp_create_nonce( 'ets-wpmembers-to-pmpro-ajax-nonce' ),
-		);
-		wp_localize_script( ETS_WPMEBERS_TO_PMPRO_SLUG, 'ets_wpmembers_to_pmpro_js_params', $script_params );
-	}
-
-	/**
 	 * Enqueues scripts for the plugin.
 	 *
 	 * @since 1.0.0
@@ -98,6 +84,12 @@ class Ets_Wpmembers_To_Pmpro_Settings {
 			'ets_wpmembers_to_pmpro_nonce' => wp_create_nonce( 'ets-wpmembers-to-pmpro-ajax-nonce' ),
 		);
 		wp_localize_script( ETS_WPMEBERS_TO_PMPRO_SLUG, 'ets_wpmembers_to_pmpro_js_params', $script_params );
+	}
+
+	public function display_migration_page() {
+		wp_enqueue_style( ETS_WPMEBERS_TO_PMPRO_SLUG );
+		wp_enqueue_script( ETS_WPMEBERS_TO_PMPRO_SLUG );
+		require_once ETS_WPMEMBERS_TO_PMPRO_PLUGIN_DIR_PATH . 'includes/pages/main.php';
 	}
 
 	/**

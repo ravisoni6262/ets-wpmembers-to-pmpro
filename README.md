@@ -14,8 +14,10 @@ The **wp-members-to-pmpro-migration-plugin** simplifies the migration process fr
 ## Installation
 
 1. Install and activate the plugin through the WordPress admin dashboard.
-2. Configure migration settings by navigating to the plugin settings in the WordPress admin.
-3. Initiate the migration process to generate the CSV file and export restricted content.
+2. Navigate to the "Tools" menu in the WordPress admin.
+3. Find the newly added submenu "WP-members to PMPro" and access the plugin settings.
+4. Initiate the migration process to generate the CSV file and export restricted content.
+
 
 ## Usage
 
@@ -32,6 +34,10 @@ Tested and compatible with the latest versions of WordPress, "wp-members," and "
 ## Contribution
 
 Contributions and feedback are welcome! If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/ravisoni6262/ets-wpmembers-to-pmpro/issues) on GitHub.
+
+## Submenu
+
+The plugin settings can be accessed under the "Tools" menu in the WordPress admin.
 
 ## License
 
